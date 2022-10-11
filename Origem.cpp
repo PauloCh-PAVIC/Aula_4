@@ -2,7 +2,7 @@
 #include<string>
 
 #include<fstream> // Read and Write Images
-
+//New comment
 using namespace std;
 
 int main() {

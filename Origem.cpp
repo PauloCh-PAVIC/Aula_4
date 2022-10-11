@@ -1,23 +1,25 @@
+//Package Inclusion
 #include<iostream>
 #include<string>
-
-#include<fstream> // Read and Write Images
-//New comment
+#include<fstream> 
+//Namespace
 using namespace std;
 
+
+//Main process inicialization
 int main() {
 
-	// Read Images
+	//Create an input image
 	ifstream image;
-	//Write new image
+	//Create and output image
 	ofstream newimage;
 
-	// open images
+	//Open original image and create filtered image variable
 	image.open("./images/monument.ppm");
 	newimage.open("./images/monument_Output_filter_Red.ppm");
 
-	// Copy over header
-	// P3  # "P3" means this is a RGB color image in ASCII
+	// Header copy to new image
+	// P3  # "P3" format
 	string type = "";
 	// 3 2          # "3 2" is the width and height of the image in pixels
 	string width = "", height = "";
@@ -30,7 +32,7 @@ int main() {
 	image >> RGB;
 
 
-	// Copy Header to new Image
+	// Copy Header to the created image
 	newimage << type << endl;
 	newimage << width << " " << height << endl;
 	newimage << RGB << endl;

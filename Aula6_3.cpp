@@ -22,7 +22,7 @@ void fun_thread() {
         // locker.lock();
         contador++;
         //locker.unlock();
-
+        printf("contador: %d...\n", contador.load());
     }
     contador2 = contador;
 }

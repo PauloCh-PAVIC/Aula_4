@@ -19,11 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Aula7_1.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="include\stb_image_write.h" />
     <ClInclude Include="include\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Aula7_1.cpp" />
+    <ClCompile Include="x64\Source.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
